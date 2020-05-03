@@ -1,24 +1,35 @@
-.section {
-  display: flex;
-  width: 100%;
+/* .section {
   background: rgba(177, 24, 24, 0.7);
+  height: 100vh;
+} */
+.center {
+  text-align: center;
 }
 
-/* mobiles */
-@media only screen and (min-width: 360px) {
-  .section {
-    height: 100vh;
-  }
+.center button {
+  margin-top: 10px;
 }
-/* tablets */
-@media only screen and (min-width: 800px) {
-  .section {
-    height: 100vh;
-  }
+
+.music {
+  background: linear-gradient(rgba(42, 33, 33, 0.7), rgba(42, 33, 33, 0.7)),
+    url("../assets/images/bg-music.jpg");
 }
-/* desktop or laptops */
-@media only screen and (min-width: 1200px) {
-  .section {
-    height: 100vh;
-  }
+
+.movies {
+  background: linear-gradient(rgba(42, 33, 33, 0.7), rgba(42, 33, 33, 0.7)),
+    url("../assets/images/bg-movies.jpg");
+  background-position: center center;
+}
+
+.pictures {
+  background: linear-gradient(rgba(42, 33, 33, 0.7), rgba(42, 33, 33, 0.7)),
+    url("../assets/images/bg-pictures.jpg");
+}
+
+.bgImage {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
 }

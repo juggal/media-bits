@@ -7,3 +7,7 @@
 .App {
   font-family: "Roboto Mono", monospace;
 }
+
+.browse {
+  width: 100%;
+}
