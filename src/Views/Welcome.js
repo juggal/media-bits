@@ -16,7 +16,7 @@ class Welcome extends React.Component {
           </Row>
           <Row>
             <Col></Col>
-            <Col>
+            <Col onClick={this.props.scroll}>
               <img className={styles.arrow} src={Arrow} alt="arrow" />
             </Col>
           </Row>

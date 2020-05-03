@@ -1,0 +1,24 @@
+.section {
+  display: flex;
+  width: 100%;
+  background: rgba(177, 24, 24, 0.7);
+}
+
+/* mobiles */
+@media only screen and (min-width: 360px) {
+  .section {
+    height: 100vh;
+  }
+}
+/* tablets */
+@media only screen and (min-width: 800px) {
+  .section {
+    height: 100vh;
+  }
+}
+/* desktop or laptops */
+@media only screen and (min-width: 1200px) {
+  .section {
+    height: 100vh;
+  }
+}
