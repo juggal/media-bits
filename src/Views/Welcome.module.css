@@ -1,0 +1,95 @@
+.section {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/images/bg-welcome.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+}
+
+@keyframes pulse_animation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.arrow {
+  animation-name: pulse_animation;
+  animation-duration: 1000ms;
+  /* transform-origin: 70% 70%; */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* mobiles */
+@media only screen and (min-width: 360px) {
+  .section {
+    height: 100vh;
+  }
+  .arrow {
+    padding-top: 180px;
+    padding-right: 120px;
+    height: 85%;
+  }
+  .heading {
+    padding-top: 200px;
+    font-size: 40px;
+  }
+}
+/* tablets */
+@media only screen and (min-width: 800px) {
+  .section {
+    height: 85vh;
+  }
+  .arrow {
+    padding-top: 200px;
+    height: 88%;
+  }
+  .heading {
+    padding-top: 140px;
+    font-size: 60px;
+  }
+}
+/* desktop or laptops */
+@media only screen and (min-width: 1200px) {
+  .section {
+    height: 100vh;
+  }
+  .arrow {
+    padding-top: 370px;
+    height: 95%;
+  }
+  .heading {
+    padding-top: 350px;
+    font-size: 80px;
+  }
+}

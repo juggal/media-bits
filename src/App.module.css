@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), local("RobotoMono"),
+    url("./assets/fonts/Roboto_Mono/RobotoMono-Regular.ttf");
+}
+
+.App {
+  font-family: "Roboto Mono", monospace;
+}

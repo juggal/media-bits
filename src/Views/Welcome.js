@@ -1,0 +1,29 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import styles from "./Welcome.module.css";
+import { Container, Row, Col } from "react-bootstrap";
+import Arrow from "../assets/images/arrow-welcome.png";
+
+class Welcome extends React.Component {
+  render() {
+    return (
+      <Container className={styles.section} fluid={true}>
+        <Container>
+          <Row>
+            <Col>
+              <div className={styles.heading}>Welcome to MediaBits</div>
+            </Col>
+          </Row>
+          <Row>
+            <Col></Col>
+            <Col>
+              <img className={styles.arrow} src={Arrow} alt="arrow" />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+    );
+  }
+}
+
+export default Welcome;
