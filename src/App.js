@@ -5,12 +5,6 @@ import Browse from "./Views/Browse";
 import scrollToComponent from "react-scroll-to-component";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      windowWidth: window.innerWidth,
-    };
-  }
   render() {
     return (
       <div className={styles.App}>
@@ -28,7 +22,6 @@ class App extends React.Component {
             this.Browse = section;
           }}
         />
-        {console.log(`width: ${this.state.windowWidth}`)}
       </div>
     );
   }

@@ -1,0 +1,47 @@
+.folderSize svg {
+  font-size: 60px;
+}
+
+.folderSize {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* mobiles (portrait)*/
+@media only screen and (max-aspect-ratio: 13/9) and (max-width: 480px) and (orientation: portrait) {
+  .inline {
+    display: flex;
+    align-items: center;
+  }
+  .folderSpacing {
+    padding: 0px 0px 0px 5px;
+  }
+}
+
+/* tablets (portrait)*/
+@media only screen and (min-width: 480px) and (max-height: 1280px) and (orientation: portrait) {
+  .inline {
+    display: flex;
+    align-items: center;
+  }
+  .folderSpacing {
+    padding: 5px 0px 5px 10px;
+  }
+}
+/* tablets (landscape) */
+@media only screen and (min-aspect-ratio: 13/9) and (min-width: 480px) and (max-height: 1280px) and (orientation: landscape) {
+  .inline {
+    display: flex;
+    align-items: center;
+  }
+  .folderSpacing {
+    padding: 5px 0px 5px 8px;
+  }
+}
+
+/* desktop or laptops */
+@media only screen and (min-width: 1280px) {
+  .folderSpacing {
+    padding: 8px;
+  }
+}

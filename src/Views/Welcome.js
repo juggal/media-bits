@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import styles from "./Welcome.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Arrow from "../assets/images/arrow-welcome.png";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 class Welcome extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class Welcome extends React.Component {
             <Col></Col>
             <Col onClick={this.props.scroll}>
               <img className={styles.arrow} src={Arrow} alt="arrow" />
+              {/* <AiOutlineArrowDown className={styles.arrow} /> */}
             </Col>
           </Row>
         </Container>

@@ -56,8 +56,8 @@
   }
   .arrow {
     padding-top: 180px;
-    padding-right: 120px;
-    height: 85%;
+    padding-right: 80px;
+    height: 82%;
   }
   .heading {
     padding-top: 200px;
@@ -88,6 +88,7 @@
   }
   .arrow {
     padding-top: 200px;
+    padding-right: 200px;
     height: 88%;
   }
   .heading {
@@ -116,8 +117,8 @@
     height: 100vh;
   }
   .arrow {
-    padding-top: 370px;
-    height: 95%;
+    padding-top: 200px;
+    height: 90%;
   }
   .heading {
     padding-top: 350px;

@@ -1,38 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styles from "./Browse.module.css";
-import { Container } from "react-bootstrap";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Button from "../Component/Button";
+import { Carousel } from "react-bootstrap";
+import Button from "../Component/Button/Button";
 
 class Browse extends React.Component {
   render() {
     const settings = {
-      className: "sliders",
-      arrows: false,
-      swipeToSlide: true,
-      lazyLoad: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
+      indicators: false,
     };
     return (
-      <Slider {...settings}>
-        <div className={`${styles.center} ${styles.bgImage} ${styles.music}`}>
-          <Button text="Music" />
-        </div>
-        <div className={`${styles.center} ${styles.bgImage} ${styles.movies}`}>
-          <Button text="Movies" />
-        </div>
-        <div
-          className={`${styles.center} ${styles.bgImage} ${styles.pictures}`}
-        >
-          <Button text="Pictures" />
-        </div>
-      </Slider>
+      <Carousel {...settings}>
+        <Carousel.Item>
+          <div className={`${styles.center} ${styles.bgImage} ${styles.music}`}>
+            <Button text="Music" heading="Music" />
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div
+            className={`${styles.center} ${styles.bgImage} ${styles.movies}`}
+          >
+            <Button text="Movies" heading="Movies" />
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div
+            className={`${styles.center} ${styles.bgImage} ${styles.pictures}`}
+          >
+            <Button text="Pictures" heading="Pictures" />
+          </div>
+        </Carousel.Item>
+      </Carousel>
     );
   }
 }
